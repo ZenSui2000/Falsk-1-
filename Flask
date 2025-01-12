@@ -1,0 +1,58 @@
+Q1. What is Flask Framework? What are the advantages of Flask Framework ?
+
+
+A1. Flask is a micro web framework for Python that provides a simple and flexible way to build web applications. It is designed to be easy to 
+use and has a small core with many extensions available to add functionality as needed. Flask is known for its simplicity, minimalism, and 
+ease of use, and it has become a popular choice for developers who want to build small to medium-sized web applications quickly and efficiently.
+
+  Here are some of the advantages of using Flask Framework:
+
+  Lightweight and flexible: Flask is a lightweight framework that does not require any particular tools or libraries to run. 
+  It is flexible and allows developers to choose the tools and libraries they want to use in their project.
+
+  Simple to use: Flask has a simple and easy-to-use API, which makes it easy for developers to learn and use. 
+  It provides a basic set of tools and features, which can be extended as needed
+
+  Extensible: Flask has a modular design, which means that it can be easily extended with various third-party libraries and plugins. 
+  This allows developers to add functionality to their application without having to write everything from scratch
+
+  Well-documented: Flask has a comprehensive and easy-to-read documentation that covers all aspects of the framework. 
+  It also has a large and active community of developers who contribute to its development and provide support to other users.
+
+  Good for small to medium-sized projects: Flask is well-suited for building small to medium-sized web applications. 
+  It is not intended for large-scale applications, but it can be used for building prototypes, proof-of-concepts, and small-scale applications
+
+  Fast development: Flask allows developers to build web applications quickly and efficiently, which can save time and resources. 
+  It provides a simple and straightforward way to handle requests and responses, making it easy to get started with building web applications
+
+Q3. What is App routing in Flask? Why do we use app routes ?
+
+
+A3. App routing in Flask refers to the process of mapping URLs to view functions in a Flask application. 
+    Flask uses a decorator called @app.route to define routes and associate them with view functions.
+
+    When a user requests a URL that matches a defined route in the Flask app, the corresponding view function is executed and its return value is sent back to the user as a 
+    response. Flask supports various HTTP methods like GET, POST, PUT, DELETE, etc., and we can specify which HTTP methods a route should respond to using the methods argument 
+    in the @app.route decorator.
+
+Q4. Create a “/welcome” route to display the welcome message “Welcome to ABC Corporation” and a “/”
+route to show the following details:
+
+
+A4. From flask import flask 
+
+    app = flask(_____name_______)
+
+@app.route("/")
+  # def hello world()"
+        "return <h1> Hello world <h1>"
+    def company_details():
+      return Comapny Name : ABC copporation Ltd <Br>Location : India<br> contact details : 999-999-9999
+
+    @app.route("/Welcome"):
+    def welcome():
+       return welcome to ABC corporation 
+
+
+  if___name____ == "___main":
+     app.run(host="0.0.0.0")
